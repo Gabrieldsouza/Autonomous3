@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title *ngIf="!isSearchbarOpened">
+      Autonomos
+    </ion-title>
+    <ion-searchbar *ngIf="isSearchbarOpened" showCancelButton="true" (search)="onSearch($event)" (ionCancel)="isSearchbarOpened=false"></ion-searchbar>
+  </ion-toolbar>
+  <ion-buttons end>
+    <button ion-button icon-only *ngIf="!isSearchbarOpened" (click)="isSearchbarOpened=true">
+      <ion-icon name="Pesquisar"></ion-icon>
+    </button>
+  </ion-buttons>
+</ion-header>
+
+<ion-content>
+  
+  <ion-list>
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/icone01.png">
+      </ion-avatar>
+      <a href="/auto01" color="primary">Autonomo1</a>
+      </ion-item>
+    
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/icone02.png">
+      </ion-avatar>
+      <a href="/auto02" color="primary">Autonomo2</a>
+      </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/icone03.png">
+      </ion-avatar>
+        <a href="/auto03" color="primary">Autonomo3</a>
+    </ion-item>
+
+    <ion-item>
+      <ion-avatar slot="start">
+        <img src="assets/icone04.png">
+      </ion-avatar>
+      <a href="/auto04" color="primary">Autonomo4</a>
+    </ion-item>
+    <ion-item>
+
+      <ion-avatar slot="start">
+        <img src="assets/icone05.png">
+      </ion-avatar>
+      <a href="/auto05" color="primary">Autonomo5</a>
+    </ion-item>
+  </ion-list>
+
+</ion-content>
