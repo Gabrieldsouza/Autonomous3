@@ -1,15 +1,9 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title *ngIf="!isSearchbarOpened">
-      Autonomos
+    <ion-title>
+      Autônomos
     </ion-title>
-    <ion-searchbar *ngIf="isSearchbarOpened" showCancelButton="true" (search)="onSearch($event)" (ionCancel)="isSearchbarOpened=false"></ion-searchbar>
   </ion-toolbar>
-  <ion-buttons end>
-    <button ion-button icon-only *ngIf="!isSearchbarOpened" (click)="isSearchbarOpened=true">
-      <ion-icon name="Pesquisar"></ion-icon>
-    </button>
-  </ion-buttons>
 </ion-header>
 
 <ion-content>
@@ -17,37 +11,37 @@
   <ion-list>
     <ion-item>
       <ion-avatar slot="start">
-        <img src="assets/icone01.png">
+        <img src="assets/pedreiro.jpg">
       </ion-avatar>
-      <a href="/auto01" color="primary">Autonomo1</a>
+      <a href="/auto01" color="primary">Antônio - Obras </a>
       </ion-item>
     
     <ion-item>
       <ion-avatar slot="start">
-        <img src="assets/icone02.png">
+        <img src="assets/faxineira.jpg">
       </ion-avatar>
-      <a href="/auto02" color="primary">Autonomo2</a>
+      <a href="/auto02" color="primary">Cleusa - Serviços Domésticos</a>
       </ion-item>
 
     <ion-item>
       <ion-avatar slot="start">
-        <img src="assets/icone03.png">
+        <img src="assets/computador.png">
       </ion-avatar>
-        <a href="/auto03" color="primary">Autonomo3</a>
+        <a href="/auto03" color="primary">Douglas - Informática</a>
     </ion-item>
 
     <ion-item>
       <ion-avatar slot="start">
-        <img src="assets/icone04.png">
+        <img src="assets/costureira.png">
       </ion-avatar>
-      <a href="/auto04" color="primary">Autonomo4</a>
+      <a href="/auto04" color="primary">Ester - Costura</a>
     </ion-item>
     <ion-item>
 
       <ion-avatar slot="start">
-        <img src="assets/icone05.png">
+        <img src="assets/eventos.png">
       </ion-avatar>
-      <a href="/auto05" color="primary">Autonomo5</a>
+      <a href="/auto05" color="primary">Giovane - Eventos</a>
     </ion-item>
   </ion-list>
 
