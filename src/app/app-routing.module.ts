@@ -10,7 +10,8 @@ const routes: Routes = [
   { path: 'auto02', loadChildren: './auto02/auto02.module#Auto02PageModule' },
   { path: 'auto03', loadChildren: './auto03/auto03.module#Auto03PageModule' },
   { path: 'auto04', loadChildren: './auto04/auto04.module#Auto04PageModule' },
-  { path: 'auto05', loadChildren: './auto05/auto05.module#Auto05PageModule' }
+  { path: 'auto05', loadChildren: './auto05/auto05.module#Auto05PageModule' },  { path: 'location', loadChildren: './location/location.module#LocationPageModule' }
+
 ];
 @NgModule({
   imports: [
